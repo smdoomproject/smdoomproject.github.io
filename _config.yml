@@ -1,3 +1,35 @@
 title: SMDoom
 description: Doom on a stock Sega Mega Drive, accelerated by an RP2350 coprocessor on the cartridge.
+url: "https://smdoomproject.github.io"
+baseurl: ""
 theme: minima
+
+# Posts live under en/_posts and fr/_posts. Jekyll scans for any folder
+# named _posts, so each post's category is set automatically from that
+# path ("en" or "fr"), giving URLs like /en/2026/09/13/introducing-smdoom/
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Minima builds its header navigation from this list: it doubles as the
+# language switcher (English / Français) shown on every page.
+header_pages:
+  - en/index.md
+  - fr/index.md
+
+defaults:
+  - scope:
+      path: "en"
+    values:
+      lang: en
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
