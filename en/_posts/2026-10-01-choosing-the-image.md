@@ -39,9 +39,9 @@ The Mega Drive knows 512 colors, but only shows a few dozen at a time: 4 palette
 
 Here is where this work stands.
 
-![Three renderings of the same frame side by side](/assets/images/2026-10-01/compare_1.png)
+![Three renderings of the same frame side by side](/assets/images/2026-10-01/compare_029.png)
 
-![Three renderings of the same frame side by side](/assets/images/2026-10-01/compare_2.png)
+![Three renderings of the same frame side by side](/assets/images/2026-10-01/compare_062.png)
 
 In each picture, the left image is the reference: every pixel takes the closest of the Mega Drive's 512 colors, with no palette limit at all. That is what we would get if the console could show all its colors at once. The other two are work-in-progress versions, with the real palette constraints: in the middle, all colors count equally; on the right, the algorithm gives priority to enemies and the weapon. You can see it in the muzzle flash, whose white core turns pink in the middle and stays almost white on the right. But you can also see the price: a few floor squares get the wrong color.
 
